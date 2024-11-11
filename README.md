@@ -1,1 +1,1 @@
-# Long-short-read-metagenomic-workflow
+# Shotgun metagenomic workflow (Long&short read)
