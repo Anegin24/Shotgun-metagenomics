@@ -204,10 +204,19 @@ tar -xzvf k2_standard_20240904.tar.gz k2_standard
 **4.1. Quality Control**
 
 **For short read**
-```
+```bash
 bash QC_short.sh
 ```
 **For long read**
 ```bash
 bash QC_long.sh
+```
+**4.2. Assembly**
+**For short read**
+```bash
+bash Assembly_short.sh
+```
+**For long read**
+```bash
+bash Assembly_long.sh
 ```
