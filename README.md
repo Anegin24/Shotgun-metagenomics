@@ -209,5 +209,5 @@ bash QC_short.sh
 ```
 **For long read**
 ```bash
-QC_long.sh
+bash QC_long.sh
 ```
