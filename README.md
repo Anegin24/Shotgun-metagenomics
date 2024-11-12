@@ -193,7 +193,7 @@ mkdir host_index
 cd host_index
 bowtie2-build --threads 20 ../hg38.fa "bt2_index_base"
 ```
-**3.2. Taxonomic Classification**
+**3.2. Taxonomic Classification** \n
 **Download Kraken-Standard**
 ```bash
 https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20240904.tar.gz
