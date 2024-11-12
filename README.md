@@ -134,4 +134,46 @@ SRR18491330	TD49	ONT_longread
 SRR18491337	TD42	ONT_longread
 SRR18491051	TD39	Illumina_shortread
 ```
+**Download raw data**
+```bash
+prefetch --option-file SraAccList.txt
+```
+**Moving data**
+```bash
+#!/bin/bash
+inputdirectory="/media/anegin97/DATA/DATA/Metagenomic/LongShortRead/"
+# Create the target directories
+mkdir -p "$inputdirectory/long/fastqlong" "$inputdirectory/short/fastqshort"
+# Loop through each line in the CSV file
+while IFS=',' read -r sample_id name type; do
+    # Skip the header row
+    if [[ $sample_id == "Sample-id" ]]; then
+        continue
+    fi
 
+    # Determine the target directory based on type
+    if [[ $type == "ONT_longread" ]]; then
+        target_dir="long"
+    elif [[ $type == "Illumina_shortread" ]]; then
+        target_dir="short"
+    else
+        continue
+    fi
+
+    # Move the folder
+    folder_path="./$sample_id"  # Assuming folders are named by Sample-id
+    if [[ -d $folder_path ]]; then
+        mv "$folder_path" "$inputdirectory/$target_dir/"
+        echo "Moved folder $folder_path to $inputdirectory/$target_dir"
+    else
+        echo "Folder $folder_path not found"
+    fi
+
+    # Process with fastq-dump after moving the folder
+    if [[ $type == "ONT_longread" ]]; then
+        fastq-dump --gzip "$inputdirectory/$target_dir/$sample_id/*" -O "$inputdirectory/long/fastqlong"
+    elif [[ $type == "Illumina_shortread" ]]; then
+        fastq-dump --split-files --gzip "$inputdirectory/$target_dir/$sample_id/*" -O "$inputdirectory/short/fastqshort"
+    fi
+done < sample-metadata.csv
+```
