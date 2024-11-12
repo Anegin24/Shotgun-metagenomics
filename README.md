@@ -138,7 +138,7 @@ SRR18491051	TD39	Illumina_shortread
 ```bash
 prefetch --option-file SraAccList.txt
 ```
-**Moving data**
+**Moving data & generate fastq**
 ```bash
 #!/bin/bash
 inputdirectory="/media/anegin97/DATA/DATA/Metagenomic/LongShortRead/"
