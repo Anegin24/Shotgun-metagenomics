@@ -52,12 +52,12 @@ mamba create --name binning python=2.7.15 \
     trim-galore=0.5.0
 ```
 **Set up the environment for checkm**
+```bash
 # Create and activate the conda environment
 mamba create -n checkm2 python=3.8 -y
 mamba activate checkm2
 
 # Install CheckM2
-```bash
 mamba install -c bioconda checkm2 -y
 
 # Create directory for CheckM2 database
