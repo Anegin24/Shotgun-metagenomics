@@ -200,3 +200,14 @@ bowtie2-build --threads 20 ../hg38.fa "bt2_index_base"
 https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20240904.tar.gz
 tar -xzvf k2_standard_20240904.tar.gz k2_standard
 ```
+## 4. Shotgun Metagenomics Workflow
+**4.1. Quality Control**
+
+**For short read**
+```
+bash QC_short.sh
+```
+**For long read**
+```bash
+QC_long.sh
+```
