@@ -1,5 +1,5 @@
 # Shotgun metagenomic workflow (Long&short read)
-## 1. Setup
+### 1. Setup
 **1.1. Install Miniforge**
 Download and install Miniforge (a minimal conda installer):
 ```bash
@@ -70,6 +70,6 @@ checkm2 database --download --path .
 # Set the CHECKM2DB environment variable
 export CHECKM2DB="path/to/checkm2_db"
 ```
-##2. Download Dataset
+### 2. Download Dataset
 
 
