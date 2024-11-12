@@ -177,3 +177,25 @@ while IFS=',' read -r sample_id name type; do
     fi
 done < sample-metadata.csv
 ```
+### 3. Download Database
+**3.1. Human genome reference**
+**Download fasta**
+```bash
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/latest/hg38.fa.gz
+gunzip hg38.fa.gz
+```
+**Indexing bowtie2**
+```bash
+# Activate the environment
+source activate long_read_shotgun
+
+mkdir host_index
+cd host_index
+bowtie2-build --threads 20 ../hg38.fa "bt2_index_base"
+```
+3.2. Taxonomic Classification
+**Download Kraken-Standard**
+```bash
+https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20240904.tar.gz
+tar -xzvf k2_standard_20240904.tar.gz k2_standard
+```
