@@ -212,6 +212,7 @@ bash QC_short.sh
 bash QC_long.sh
 ```
 **4.2. Assembly**
+
 **For short read**
 ```bash
 bash Assembly_short.sh
