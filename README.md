@@ -273,7 +273,7 @@ bash Assembly_long.sh
 ## 5. Taxonomy classification using Kraken2
 **Classification with Kraken2**
 ```bash
-bash Kraken2.sh
+bash kraken2.sh
 ```
 **Bracken**
 ```bash
