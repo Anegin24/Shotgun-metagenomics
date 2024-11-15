@@ -1,4 +1,4 @@
-# Shotgun metagenomic workflow (Long&short read)
+# Shotgun metagenomic workflow (Long (ONT)&short read)
 ### 1. Setup
 **1.1. Install Miniforge**
 Download and install Miniforge (a minimal conda installer):
