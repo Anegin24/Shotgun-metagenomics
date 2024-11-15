@@ -270,4 +270,12 @@ qiime tools export \
 bash Assembly_long.sh
 ```
 
-##5. Taxonomy classification using Kraken2
+## 5. Taxonomy classification using Kraken2
+**Classification with Kraken2**
+```bash
+bash Kraken2.sh
+```
+**Bracken**
+```bash
+bash bracken.sh
+```
