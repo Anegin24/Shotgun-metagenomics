@@ -214,6 +214,7 @@ bash QC_long.sh
 **4.2. Assembly**
 
 **For short read**
+
 **Solution 1**
 ```bash
 bash Assembly_short.sh
@@ -224,7 +225,34 @@ wget http://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-linux-conda.yml
 ```
+
+Assembly with megahit
+```bash
+qiime assembly assemble-megahit \
+    --i-seqs reads/demux.qza \
+    --p-presets "meta-sensitive" \
+    --p-num-cpu-threads 16 \
+    --o-contigs contigs/contigs.qza \
+    --verbose
+```
+QC with QUAST
+```bash
+qiime assembly evaluate-contigs \
+    --i-contigs contigs/contigs.qza \
+    --p-threads 16 \
+    --p-memory-efficient \
+    --o-visualization contigs/contigs.qzv \
+    --verbose
+```
+Export contigs.qza to tsv format for each sample
+```bash
+qiime tools export \
+  --input-path path/contigs.qza \
+  --output-path exported-contigs
+```
 **For long read**
 ```bash
 bash Assembly_long.sh
 ```
+
+##5. Taxonomy classification using Kraken2
