@@ -1,0 +1,354 @@
+.
+├── host_index
+├── kraken2
+│   ├── kraken2_SRR18490940
+│   ├── kraken2_SRR18490941
+│   ├── kraken2_SRR18490946
+│   ├── kraken2_SRR18491050
+│   ├── kraken2_SRR18491051
+│   └── kraken2_SRR18491056
+├── long
+│   ├── assembled
+│   │   ├── SRR18490940
+│   │   │   ├── assembly
+│   │   │   │   ├── 00-assembly
+│   │   │   │   ├── 10-consensus
+│   │   │   │   ├── 20-repeat
+│   │   │   │   ├── 30-contigger
+│   │   │   │   ├── 40-polishing
+│   │   │   │   ├── kraken2_SRR18490940
+│   │   │   │   └── qc
+│   │   │   │       ├── basic_stats
+│   │   │   │       ├── icarus_viewers
+│   │   │   │       └── predicted_genes
+│   │   │   ├── qc
+│   │   │   ├── remove_host
+│   │   │   └── trimmed
+│   │   ├── SRR18490941
+│   │   │   ├── assembly
+│   │   │   │   ├── 00-assembly
+│   │   │   │   ├── 10-consensus
+│   │   │   │   ├── 20-repeat
+│   │   │   │   ├── 30-contigger
+│   │   │   │   ├── 40-polishing
+│   │   │   │   └── qc
+│   │   │   │       ├── basic_stats
+│   │   │   │       ├── icarus_viewers
+│   │   │   │       └── predicted_genes
+│   │   │   ├── qc
+│   │   │   ├── remove_host
+│   │   │   └── trimmed
+│   │   └── SRR18490946
+│   │       ├── assembly
+│   │       │   ├── 00-assembly
+│   │       │   ├── 10-consensus
+│   │       │   ├── 20-repeat
+│   │       │   ├── 30-contigger
+│   │       │   ├── 40-polishing
+│   │       │   └── qc
+│   │       │       ├── basic_stats
+│   │       │       ├── icarus_viewers
+│   │       │       └── predicted_genes
+│   │       ├── qc
+│   │       ├── remove_host
+│   │       └── trimmed
+│   ├── fastqlong
+│   ├── sra
+│   │   ├── SRR18490940
+│   │   ├── SRR18490941
+│   │   ├── SRR18490946
+│   │   ├── SRR18490968
+│   │   ├── SRR18490980
+│   │   ├── SRR18491084
+│   │   ├── SRR18491085
+│   │   ├── SRR18491298
+│   │   ├── SRR18491307
+│   │   ├── SRR18491312
+│   │   ├── SRR18491318
+│   │   ├── SRR18491323
+│   │   ├── SRR18491329
+│   │   ├── SRR18491330
+│   │   └── SRR18491337
+│   ├── SRR18490968
+│   │   ├── assembly
+│   │   │   └── 00-assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18490980
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491084
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491085
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491298
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491307
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491312
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491318
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491323
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491329
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   ├── SRR18491330
+│   │   ├── assembly
+│   │   ├── qc
+│   │   ├── remove_host
+│   │   └── trimmed
+│   └── SRR18491337
+│       ├── qc
+│       ├── remove_host
+│       └── trimmed
+└── short
+    ├── fastqshort
+    ├── multiqc_report
+    │   └── multiqc_data
+    ├── QIIME2wf
+    │   ├── database
+    │   ├── exported-contigs
+    │   ├── kraken
+    │   └── reads
+    ├── sra
+    │   ├── SRR18490938
+    │   ├── SRR18490939
+    │   ├── SRR18490950
+    │   ├── SRR18490989
+    │   ├── SRR18490994
+    │   ├── SRR18491000
+    │   ├── SRR18491005
+    │   ├── SRR18491039
+    │   ├── SRR18491040
+    │   ├── SRR18491047
+    │   ├── SRR18491050
+    │   ├── SRR18491051
+    │   ├── SRR18491056
+    │   ├── SRR18491247
+    │   └── SRR18491259
+    ├── SRR18490938
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── K21
+    │   │   │   └── configs
+    │   │   ├── K33
+    │   │   │   └── configs
+    │   │   ├── K55
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   ├── pipeline_state
+    │   │   └── tmp
+    │   │       ├── hammer_4i5v_3t7
+    │   │       │   ├── kmer_counter_z7nXUz
+    │   │       │   └── kmer_splitter_fOynjb
+    │   │       ├── hammer_mszfxzb0
+    │   │       │   ├── kmer_counter_7c0xJA
+    │   │       │   └── kmer_splitter_uUlxFu
+    │   │       └── spades_b22n4cpf
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18490939
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── K21
+    │   │   │   └── configs
+    │   │   ├── K33
+    │   │   │   └── configs
+    │   │   ├── K55
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   ├── pipeline_state
+    │   │   └── tmp
+    │   │       └── spades_ymcv3u4i
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18490950
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── K21
+    │   │   │   └── configs
+    │   │   ├── K33
+    │   │   │   └── configs
+    │   │   ├── K55
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   ├── pipeline_state
+    │   │   └── tmp
+    │   │       └── spades_pjdto87j
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18490989
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── K21
+    │   │   │   └── configs
+    │   │   ├── K33
+    │   │   │   └── configs
+    │   │   ├── K55
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   ├── pipeline_state
+    │   │   └── tmp
+    │   │       └── spades_krnnta93
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18490994
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── K21
+    │   │   │   └── configs
+    │   │   ├── K33
+    │   │   │   └── configs
+    │   │   ├── K55
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   ├── pipeline_state
+    │   │   └── tmp
+    │   │       └── spades_yno213s3
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491000
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   ├── misc
+    │   │   └── tmp
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491005
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   └── tmp
+    │   │       └── hammer_0vtrun3v
+    │   │           ├── kmer_counter_fpE8es
+    │   │           └── kmer_splitter_pvFFNV
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491039
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491040
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491047
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491050
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   └── tmp
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491051
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491056
+    │   ├── assembly
+    │   │   ├── configs
+    │   │   │   ├── corrector
+    │   │   │   ├── debruijn
+    │   │   │   ├── hammer
+    │   │   │   └── ionhammer
+    │   │   ├── corrected
+    │   │   │   └── configs
+    │   │   └── tmp
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    ├── SRR18491247
+    │   ├── fastqc
+    │   ├── remove_host
+    │   └── trimmed
+    └── SRR18491259
+        ├── fastqc
+        ├── remove_host
+        └── trimmed
+
+351 directories
