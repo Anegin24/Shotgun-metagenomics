@@ -225,11 +225,26 @@ wget http://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-linux-conda.yml
 ```
-
+Import raw data to QIIME2
+```bash
+  echo -e 'sample-id\tforward-absolute-filepath\treverse-absolute-filepath' > manifest.tsv
+  for FOR in reads/*_1*gz;
+  do ID=$(basename $FOR | cut -f1 -d_);
+  REV=${FOR/_1/_2};
+  echo -e "${ID}\t${PWD}/${FOR}\t${PWD}/${REV}";
+  done >>manifest.tsv
+```
+```bash
+  qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path manifest.tsv \
+  --output-path reads.qza \
+  --input-format PairedEndFastqManifestPhred33V2
+```
 Assembly with megahit
 ```bash
 qiime assembly assemble-megahit \
-    --i-seqs reads/demux.qza \
+    --i-seqs reads/reads.qza \
     --p-presets "meta-sensitive" \
     --p-num-cpu-threads 16 \
     --o-contigs contigs/contigs.qza \
