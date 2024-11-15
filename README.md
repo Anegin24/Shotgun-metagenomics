@@ -214,8 +214,15 @@ bash QC_long.sh
 **4.2. Assembly**
 
 **For short read**
+**Solution 1**
 ```bash
 bash Assembly_short.sh
+```
+**Solution 2: less RAM required**
+```bash
+wget http://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-linux-conda.yml
 ```
 **For long read**
 ```bash
